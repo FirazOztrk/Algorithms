@@ -1,0 +1,14 @@
+def buble_sort(arr):
+    state=True
+    while state:
+     state=False
+     for i in range(len(arr)-1):
+        if arr[i]>arr[i+1]:
+          state=True
+          arr[i], arr[i+1]=arr[i+1], arr[i]
+
+    return arr
+
+l=[5,8,15,23,10]
+print(buble_sort(l))        
+
